@@ -1,0 +1,128 @@
+# Copyright (C) 2018 Pascal Birchler
+# This file is distributed under the same license as the Video Post Type plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Video Post Type 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/video-post-type\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2018-10-22T07:11:14+00:00\n"
+"PO-Revision-Date: 2018-10-22 11:24+0200\n"
+"X-Generator: Poedit 2.1\n"
+"X-Domain: video-post-type\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: de_CH\n"
+
+#. Plugin Name of the plugin
+msgid "Video Post Type"
+msgstr "Video Post Type"
+
+#. Plugin URI of the plugin
+msgid "https://github.com/swissspidy/video-post-type/"
+msgstr "https://github.com/swissspidy/video-post-type/"
+
+#. Description of the plugin
+msgid "Adds a simple video post type to the site."
+msgstr "Fügt einen einfach Video-Inhaltstyp zur Site hinzu."
+
+#. Author of the plugin
+msgid "Pascal Birchler"
+msgstr "Pascal Birchler"
+
+#. Author URI of the plugin
+msgid "https://pascalbirchler.com"
+msgstr "https://pascalbirchler.com"
+
+#: inc/namespace.php:43
+msgctxt "Post Type General Name"
+msgid "Videos"
+msgstr "Videos"
+
+#: inc/namespace.php:44
+msgctxt "Post Type Singular Name"
+msgid "Video"
+msgstr "Video"
+
+#: inc/namespace.php:45
+msgid "Videos"
+msgstr "Videos"
+
+#: inc/namespace.php:46
+msgid "All Videos"
+msgstr "Alle Videos"
+
+#: inc/namespace.php:47
+msgid "View Video"
+msgstr "Video ansehen"
+
+#: inc/namespace.php:48
+msgid "Add New Video"
+msgstr "Neues Video hinzufügen"
+
+#: inc/namespace.php:49
+msgid "New Video"
+msgstr "Neues Video"
+
+#: inc/namespace.php:50
+msgid "Edit Video"
+msgstr "Video bearbeiten"
+
+#: inc/namespace.php:51
+msgid "Update Video"
+msgstr "Video aktualisieren"
+
+#: inc/namespace.php:52
+msgid "Search videos"
+msgstr "Videos suchen"
+
+#: inc/namespace.php:53
+msgid "No videos found"
+msgstr "Keine Videos gefunden"
+
+#: inc/namespace.php:54
+msgid "No videos found in Trash"
+msgstr "Keine Videos im Papierkorb gefunden"
+
+#: inc/namespace.php:58
+msgid "Video"
+msgstr "Video"
+
+#: inc/namespace.php:59
+msgid "Video Posts"
+msgstr "Video-Beiträge"
+
+#: inc/namespace.php:86 assets/js/src/components/video-panel/index.js:29
+msgid "Video URL"
+msgstr "Video URL"
+
+#: inc/namespace.php:164
+msgid "Write something about the video"
+msgstr "Schreiben Sie etwas zum Video"
+
+#: inc/Widget.php:18
+msgid "Latest Video"
+msgstr "Aktuelles Video"
+
+#: inc/Widget.php:86
+msgid "All videos"
+msgstr "Alle Videos"
+
+#: inc/Widget.php:103
+msgctxt "default widget title"
+msgid "Latest Video"
+msgstr "Aktuelles Video"
+
+#: inc/Widget.php:108
+msgid "Title"
+msgstr "Titel"
+
+#: inc/Widget.php:127
+msgid "Show archive link"
+msgstr "Archiv-Link anzeigen"
+
+#: assets/js/src/components/video-panel/index.js:30
+msgid "For example from a Vimeo or YouTube video."
+msgstr "Zum Beispiel von einem Vimeo oder YouTube-Video."
