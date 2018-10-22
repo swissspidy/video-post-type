@@ -1,0 +1,127 @@
+# Copyright (C) 2018 Pascal Birchler
+# This file is distributed under the same license as the Video Post Type plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Video Post Type 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/video-post-type\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2018-10-22T07:11:14+00:00\n"
+"PO-Revision-Date: 2018-10-22T07:11:14+00:00\n"
+"X-Generator: WP-CLI 2.0.1\n"
+"X-Domain: video-post-type\n"
+
+#. Plugin Name of the plugin
+msgid "Video Post Type"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://github.com/swissspidy/video-post-type/"
+msgstr ""
+
+#. Description of the plugin
+msgid "Adds a simple video post type to the site."
+msgstr ""
+
+#. Author of the plugin
+msgid "Pascal Birchler"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://pascalbirchler.com"
+msgstr ""
+
+#: inc/namespace.php:43
+msgctxt "Post Type General Name"
+msgid "Videos"
+msgstr ""
+
+#: inc/namespace.php:44
+msgctxt "Post Type Singular Name"
+msgid "Video"
+msgstr ""
+
+#: inc/namespace.php:45
+msgid "Videos"
+msgstr ""
+
+#: inc/namespace.php:46
+msgid "All Videos"
+msgstr ""
+
+#: inc/namespace.php:47
+msgid "View Video"
+msgstr ""
+
+#: inc/namespace.php:48
+msgid "Add New Video"
+msgstr ""
+
+#: inc/namespace.php:49
+msgid "New Video"
+msgstr ""
+
+#: inc/namespace.php:50
+msgid "Edit Video"
+msgstr ""
+
+#: inc/namespace.php:51
+msgid "Update Video"
+msgstr ""
+
+#: inc/namespace.php:52
+msgid "Search videos"
+msgstr ""
+
+#: inc/namespace.php:53
+msgid "No videos found"
+msgstr ""
+
+#: inc/namespace.php:54
+msgid "No videos found in Trash"
+msgstr ""
+
+#: inc/namespace.php:58
+msgid "Video"
+msgstr ""
+
+#: inc/namespace.php:59
+msgid "Video Posts"
+msgstr ""
+
+#: inc/namespace.php:86
+#: assets/js/src/components/video-panel/index.js:29
+msgid "Video URL"
+msgstr ""
+
+#: inc/namespace.php:164
+msgid "Write something about the video"
+msgstr ""
+
+#: inc/Widget.php:18
+msgid "Latest Video"
+msgstr ""
+
+#: inc/Widget.php:86
+msgid "All videos"
+msgstr ""
+
+#: inc/Widget.php:103
+msgctxt "default widget title"
+msgid "Latest Video"
+msgstr ""
+
+#: inc/Widget.php:108
+msgid "Title"
+msgstr ""
+
+#: inc/Widget.php:127
+msgid "Show archive link"
+msgstr ""
+
+#: assets/js/src/components/video-panel/index.js:30
+msgid "For example from a Vimeo or YouTube video."
+msgstr ""
