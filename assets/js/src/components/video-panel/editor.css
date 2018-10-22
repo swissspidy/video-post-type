@@ -1,7 +1,3 @@
-.wp-block-video-post-type-recommendation .components-base-control {
-	margin-bottom: 20px;
-}
-
-.wp-block-video-post-type-recommendation .components-base-control__help {
-	color: #555d66;
+.components-base-control.videoUrlSettings .components-base-control__help {
+	margin-top: 0;
 }

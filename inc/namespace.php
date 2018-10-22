@@ -113,7 +113,7 @@ function enqueue_block_editor_assets(): void {
 			'wp-i18n',
 			'wp-plugins',
 		],
-		'20181021',
+		'20181022',
 		true
 	);
 
@@ -121,7 +121,7 @@ function enqueue_block_editor_assets(): void {
 		'video-post-type',
 		plugins_url( 'assets/css/editor.css', __DIR__ ),
 		[],
-		'20181021'
+		'20181022'
 	);
 
 	if ( function_exists( 'gutenberg_get_jed_locale_data' ) ) {

@@ -9,7 +9,12 @@ import { InspectorControls } from '@wordpress/editor';
 import { Component } from '@wordpress/element';
 import { __ } from '@wordpress/i18n';
 
-export class PreviewToggle extends Component {
+/**
+ * Internal dependencies.
+ */
+import './editor.css';
+
+export class VideoPanel extends Component {
 	render() {
 		const {
 				  meta: {
@@ -19,20 +24,17 @@ export class PreviewToggle extends Component {
 			  } = this.props;
 
 		return (
-			<InspectorControls>
-				<PluginPostStatusInfo>
-					<PanelBody title={__( 'Video', 'video-post-type' )}>
-						<TextControl
-							label={__( 'Video URL', 'video-post-type' )}
-							help={__( 'For example. from a Vimeo or YouTube video.', 'video-post-type' )}
-							value={videoUrl}
-							onChange={( value ) => {
-								updateMeta( { _video: value || '' } );
-							}}
-						/>
-					</PanelBody>
-				</PluginPostStatusInfo>
-			</InspectorControls>
+			<PluginPostStatusInfo>
+				<TextControl
+					label={__( 'Video URL', 'video-post-type' )}
+					help={__( 'For example from a Vimeo or YouTube video.', 'video-post-type' )}
+					className="videoUrlSettings"
+					value={videoUrl}
+					onChange={( value ) => {
+						updateMeta( { _video_url: value || '' } );
+					}}
+				/>
+			</PluginPostStatusInfo>
 		);
 	}
 }
@@ -60,4 +62,4 @@ export default compose( [
 		};
 	} ),
 	ifCondition( ( { postType } ) => 'video' === postType ),
-] )( PreviewToggle );
+] )( VideoPanel );
