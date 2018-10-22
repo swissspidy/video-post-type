@@ -7,6 +7,7 @@
 
 namespace VideoPostType;
 
+use WP_Post;
 const POST_TYPE_NAME = 'video';
 
 /**
@@ -19,6 +20,8 @@ function bootstrap() {
 	add_action( 'enqueue_block_editor_assets', __NAMESPACE__ . '\enqueue_block_editor_assets' );
 
 	add_action( 'widgets_init', __NAMESPACE__ . '\register_widget' );
+
+	add_filter( 'write_your_story', __NAMESPACE__ . '\filter_body_placeholder', 10, 2 );
 }
 
 /**
@@ -143,4 +146,20 @@ function enqueue_block_editor_assets(): void {
  */
 function register_widget(): void {
 	\register_widget( new Widget() );
+}
+
+
+/**
+ * Filters the body placeholder in the block editor.
+ *
+ * @param  string $text Body placeholder.
+ * @param WP_Post $post Current post object.
+ * @return string Modified body placeholder.
+ */
+function filter_body_placeholder( $text, WP_Post $post ): string {
+	if ( POST_TYPE_NAME !== $post->post_type ) {
+		return $text;
+	}
+
+	return __( 'Write something about the video', 'video-post-type' );
 }
