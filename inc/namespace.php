@@ -127,26 +127,8 @@ function enqueue_block_editor_assets(): void {
 		'20181022'
 	);
 
-	if ( function_exists( 'gutenberg_get_jed_locale_data' ) ) {
-		// Prepare Jed locale data.
-		$locale_data = gutenberg_get_jed_locale_data( 'video-post-type' );
-
-		wp_add_inline_script(
-			'video-post-type',
-			'wp.i18n.setLocaleData( ' . wp_json_encode( $locale_data ) . ', "video-post-type" );',
-			'before'
-		);
-	} elseif ( function_exists( 'wp_get_jed_locale_data' ) ) {
-		// Prepare Jed locale data.
-		$locale_data = wp_get_jed_locale_data( 'video-post-type' );
-
-		wp_add_inline_script(
-			'video-post-type',
-			'wp.i18n.setLocaleData( ' . wp_json_encode( $locale_data ) . ', "video-post-type" );',
-			'before'
-		);
-	} else {
-		trigger_error( 'gutenberg_get_jed_locale_data() is missing, check for a change in Gutenberg.', E_USER_WARNING );
+	if ( \function_exists( 'wp_set_script_translations' ) ) {
+		wp_set_script_translations( 'video-post-type', 'video-post-type', \dirname( __DIR__ ) . '/languages' );
 	}
 }
 
