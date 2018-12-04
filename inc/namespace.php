@@ -61,6 +61,7 @@ function register_post_type() {
 		'supports'          => [ 'title', 'excerpt', 'editor', 'thumbnail', 'comments', 'custom-fields' ],
 		'menu_icon'         => 'dashicons-video-alt2',
 		'public'            => true,
+		'has_archive'       => true,
 		'show_in_rest'      => true,
 		'show_in_admin_bar' => false,
 		'rewrite'           => [
@@ -80,7 +81,8 @@ function register_post_type() {
 function register_post_meta() {
 	\register_post_meta(
 		POST_TYPE_NAME,
-		'_video_url', [
+		'_video_url',
+		[
 			'show_in_rest'      => true,
 			'type'              => 'string',
 			'description'       => __( 'Video URL', 'video-post-type' ),
