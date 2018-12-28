@@ -55,16 +55,14 @@ function register_post_type() {
 	];
 
 	$args = [
-		'label'             => __( 'Video', 'video-post-type' ),
-		'description'       => __( 'Video Posts', 'video-post-type' ),
-		'labels'            => $labels,
-		'supports'          => [ 'title', 'excerpt', 'editor', 'thumbnail', 'comments', 'custom-fields' ],
-		'menu_icon'         => 'dashicons-video-alt2',
-		'public'            => true,
-		'has_archive'       => true,
-		'show_in_rest'      => true,
-		'show_in_admin_bar' => false,
-		'rewrite'           => [
+		'label'        => __( 'Video', 'video-post-type' ),
+		'description'  => __( 'Video Posts', 'video-post-type' ),
+		'labels'       => $labels,
+		'supports'     => [ 'title', 'excerpt', 'editor', 'thumbnail', 'comments', 'custom-fields' ],
+		'menu_icon'    => 'dashicons-video-alt2',
+		'public'       => true,
+		'show_in_rest' => true,
+		'rewrite'      => [
 			'slug'       => 'videos',
 			'with_front' => true,
 			'pages'      => true,
