@@ -61,6 +61,7 @@ function register_post_type() {
 		'supports'     => [ 'title', 'excerpt', 'editor', 'thumbnail', 'comments', 'custom-fields' ],
 		'menu_icon'    => 'dashicons-video-alt2',
 		'public'       => true,
+		'has_archive'  => true,
 		'show_in_rest' => true,
 		'rewrite'      => [
 			'slug'       => 'videos',
