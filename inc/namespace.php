@@ -86,6 +86,7 @@ function register_post_meta() {
 			'type'              => 'string',
 			'description'       => __( 'Video URL', 'video-post-type' ),
 			'sanitize_callback' => 'sanitize_text_field',
+			'auth_callback'     => '__return_true',
 			'single'            => true,
 		]
 	);
