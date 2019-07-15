@@ -31,7 +31,7 @@ function load_textdomain(): void {
 	load_plugin_textdomain(
 		'video-post-type',
 		false,
-		dirname( plugin_basename( __DIR__ ) ) . '/languages'
+		\dirname( plugin_basename( __DIR__ ) ) . '/languages'
 	);
 }
 
@@ -102,23 +102,20 @@ function enqueue_block_editor_assets(): void {
 		return;
 	}
 
-	if ( ! function_exists( 'register_block_type' ) ) {
+	if ( ! \function_exists( 'register_block_type' ) ) {
 		return;
 	}
+
+	$script_deps_path    = \dirname( __DIR__ ) . '/assets/js/editor.deps.json';
+	$script_dependencies = file_exists( $script_deps_path )
+		? json_decode( file_get_contents( $script_deps_path ), false ) // phpcs:ignore WordPress.WP.AlternativeFunctions.file_get_contents_file_get_contents
+		: [];
 
 	wp_enqueue_script(
 		'video-post-type',
 		plugins_url( 'assets/js/editor.js', __DIR__ ),
-		[
-			'wp-components',
-			'wp-data',
-			'wp-edit-post',
-			'wp-editor',
-			'wp-element',
-			'wp-i18n',
-			'wp-plugins',
-		],
-		'20181022',
+		$script_dependencies,
+		'20190715',
 		true
 	);
 
