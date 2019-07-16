@@ -142,7 +142,7 @@ function register_widget(): void {
 /**
  * Filters the body placeholder in the block editor.
  *
- * @param  string $text Body placeholder.
+ * @param  string  $text Body placeholder.
  * @param WP_Post $post Current post object.
  * @return string Modified body placeholder.
  */
