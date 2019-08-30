@@ -24,7 +24,7 @@
     "@wordpress/data": "^4.6.0",
     "@wordpress/edit-post": "^3.5.0",
     "@wordpress/editor": "^9.4.0",
-    "@wordpress/element": "^2.5.0",
+    "@wordpress/element": "^2.7.0",
     "@wordpress/i18n": "^3.5.0",
     "@wordpress/plugins": "^2.4.0",
     "@wordpress/scripts": "^3.3.0",
