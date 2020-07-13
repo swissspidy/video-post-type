@@ -28,7 +28,7 @@
     "@wordpress/i18n": "^3.14.0",
     "@wordpress/plugins": "^2.20.0",
     "@wordpress/scripts": "^12.1.0",
-    "autoprefixer": "^9.8.4",
+    "autoprefixer": "^9.8.5",
     "babel-loader": "^8.1.0",
     "cross-env": "^7.0.2",
     "css-loader": "^3.6.0",
