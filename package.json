@@ -25,7 +25,7 @@
     "@wordpress/edit-post": "^3.26.2",
     "@wordpress/editor": "^9.25.3",
     "@wordpress/element": "^2.19.0",
-    "@wordpress/i18n": "^3.17.0",
+    "@wordpress/i18n": "^3.17.1",
     "@wordpress/plugins": "^2.24.3",
     "@wordpress/scripts": "^13.0.2",
     "autoprefixer": "^10.2.4",
